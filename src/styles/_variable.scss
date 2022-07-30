@@ -1,0 +1,15 @@
+[data-theme="light"] {
+  --bg-color: #fff;
+  --bg-navbar: #f0f2f5;
+  --bg-footer: #fff;
+  --color-title: #2d3748;
+  --bg-box: #f7f7f7;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1f2028;
+  --bg-navbar: #2d3748;
+  --bg-footer: #2e3039;
+  --color-title: #e2e8f0;
+  --bg-box: #2e3039;
+}

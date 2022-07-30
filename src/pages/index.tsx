@@ -1,9 +1,12 @@
-import type {NextPage} from 'next'
+import type {NextPage} from 'next';
+import {HomeModules} from 'modules/home';
 
 const Home: NextPage = () => {
-    return (
-        <>hello world</>
-    )
-}
+  return (
+    <>
+      <HomeModules />
+    </>
+  );
+};
 
-export default Home
+export default Home;

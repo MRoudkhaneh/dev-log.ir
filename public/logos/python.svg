@@ -1,0 +1,17 @@
+<svg id="Group_88" data-name="Group 88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97.716" height="96.939" viewBox="0 0 97.716 96.939">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.13" y1="0.12" x2="0.796" y2="0.782" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#387eb8"/>
+      <stop offset="1" stop-color="#366994"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.191" y1="0.206" x2="0.907" y2="0.884" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe052"/>
+      <stop offset="1" stop-color="#ffc331"/>
+    </linearGradient>
+  </defs>
+  <ellipse id="download_1_" data-name="download (1)" cx="48.858" cy="48.47" rx="48.858" ry="48.47" fill="#fff"/>
+  <g id="python-5" transform="translate(8 8)">
+    <path id="Path_768" data-name="Path 768" d="M40.163.072C19.7.072,20.975,8.947,20.975,8.947L21,18.142h19.53V20.9H13.241S.145,19.417.145,40.067s11.43,19.918,11.43,19.918H18.4V50.4s-.368-11.431,11.248-11.431h19.37S59.9,39.148,59.9,28.454V10.773S61.551.072,40.163.072ZM29.394,6.255a3.51,3.51,0,1,1-2.485,1.028A3.51,3.51,0,0,1,29.394,6.255Z" transform="translate(-0.145 -0.072)" fill="url(#linear-gradient)"/>
+    <path id="Path_769" data-name="Path 769" d="M85.909,124.237c20.466,0,19.188-8.875,19.188-8.875l-.023-9.195H85.544v-2.761h27.287s13.1,1.485,13.1-19.165S114.5,64.324,114.5,64.324h-6.822v9.582s.368,11.43-11.248,11.43H77.057s-10.883-.176-10.883,10.518v17.682s-1.653,10.7,19.735,10.7Zm10.769-6.183a3.511,3.511,0,1,1,2.485-1.028,3.51,3.51,0,0,1-2.485,1.028Z" transform="translate(-45.31 -44.04)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: dana, sans-serif;
+  background:  var(--bg-color);
+  color: var(--color-title);
+}
+
+
+.menu-item {
+  color: var(--color-title);
+  position: relative;
+  border: none;
+  height: 40px;
+  border-radius: .5rem;
+  font-size: .9rem;
+
+  &.active {
+    position: relative;
+    font-weight: 700;
+    color: #FBAF40 !important;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: -5px;
+      height: 3px;
+      border-radius: 1rem;
+      background: #FBAF40 !important;
+    }
+  }
+
+  &:hover {
+    position: relative;
+    color: var(--color-title);
+
+    &:before {
+      width: 50%;
+      background: var(--color-title);
+
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -5px;
+    height: 3px;
+    border-radius: 1rem;
+    transition: width .3s;
+  }
+}
+
+
+.banner {
+  background: url(../../public/img/pat.png);
+  height: 100%;
+  width: 100%;
+  background-size: 11rem;
+  position: absolute;
+  opacity: 0.09;
+  top: 0;
+  left: 0;
+  filter: invert(1);
+  z-index: -1;
+}
+
+.title {
+  position: relative;
+  padding-right: 1rem;
+
+  &:before {
+    background-color: #e2e8f0;
+    content: "";
+    border-radius: 9999px;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    top: 0;
+    right: 0;
+  }
+}
