@@ -1,4 +1,4 @@
-import 'styles/globals.scss';
+import '@/styles/globals.scss';
 import type {AppProps} from 'next/app';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {NextPage} from 'next';
@@ -37,3 +37,5 @@ const MyApp = ({Component, pageProps}: AppProps & {Component: TPage}) => {
     </>
   );
 };
+
+export default MyApp;

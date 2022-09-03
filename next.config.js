@@ -1,4 +1,11 @@
-const withPlugins = require('next-compose-plugins');
 const withSvgr = require('next-svgr');
 
-module.exports = withPlugins([[withSvgr]]);
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true
+};
+
+module.exports = () => {
+    const plugins = [withSvgr];
+     return plugins.reduce((acc, plugin) => plugin(acc), {...nextConfig});
+};
