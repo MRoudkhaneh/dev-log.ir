@@ -1,7 +1,7 @@
-import {Button, Container, Grid, Group, MediaQuery, Stack} from '@mantine/core';
+import {Button, Container, Grid, Group} from '@mantine/core';
 import {ReactNode} from 'react';
-import {PublicHeader, ResponsiveMenu} from '../components/common';
-import {Logo} from 'assets/icons';
+import {PublicHeader, ResponsiveMenu} from '@/components/common';
+import {Logo} from '@/assets/icons';
 export const PublicLayout = ({children}: {children: ReactNode}) => {
   return (
     <>

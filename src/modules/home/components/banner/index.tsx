@@ -1,5 +1,5 @@
 import {Box, Button, Group, Stack, Text, Title} from '@mantine/core';
-import {LOGOS} from 'lib/logos';
+import {LOGOS} from '@/lib/logos';
 import {SvgHeader} from '../index';
 
 export const BannerHome = () => {

@@ -3,10 +3,9 @@ import type {AppProps} from 'next/app';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {NextPage} from 'next';
 import {ReactElement, ReactNode} from 'react';
-import {PublicLayout} from '../layouts/public.Layout';
-import {ThemProvider} from '../providers/them.provider';
-import {withTRPC} from '@trpc/next';
-import type {ServerRouter} from 'server/router';
+import {PublicLayout} from '@/layouts/public.Layout';
+import {ThemProvider} from '@/providers/them.provider';
+
 
 type TPage<P = {}> = NextPage<P> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -38,11 +37,3 @@ const MyApp = ({Component, pageProps}: AppProps & {Component: TPage}) => {
     </>
   );
 };
-
-export default withTRPC<ServerRouter>({
-  config({ctx}) {
-    const url = 'http://localhost:3000/api/trpc';
-    return {url};
-  },
-  ssr: true,
-})(MyApp);

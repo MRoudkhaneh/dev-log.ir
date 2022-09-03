@@ -1,6 +1,6 @@
 import {Group, MediaQuery} from '@mantine/core';
 import Link from 'next/link';
-import {MENU_ITEMS} from 'lib/menu';
+import {MENU_ITEMS} from '@/lib/menu';
 import {useRouter} from 'next/router';
 
 export const PublicHeader = () => {

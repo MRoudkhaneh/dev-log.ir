@@ -1,4 +1,4 @@
-import {BarIcon} from 'assets/icons';
+import {BarIcon} from '@/assets/icons';
 import {Drawer, MediaQuery} from '@mantine/core';
 import {useState} from 'react';
 
