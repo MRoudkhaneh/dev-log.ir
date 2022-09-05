@@ -4,7 +4,9 @@ import nc from 'next-connect';
 export const Router = nc<NextApiRequest, NextApiResponse>({
   attachParams: true,
   onError: (err, req, res) => {
-    res.status(500).end('خطاییدداخلی');
+    // res.status(500).end('خطاییدداخلی');
+    res.status(500).end(err);
+
   },
   onNoMatch: (req, res) => {
     res.status(404).end('متاسفانه گشتیم نبود!');
