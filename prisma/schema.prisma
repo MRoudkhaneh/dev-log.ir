@@ -25,4 +25,13 @@ model Post {
   published         Boolean          @default(false)
   author            User             @relation(fields: [authorId], references: [id])
   authorId          Int
+  deleted           Boolean          @default(false)
+  category          Category         @relation(fields: [categoryId], references: [id])
+  categoryId        Int
+}
+
+model Category {
+  id             Int        @id @default(autoincrement())
+  title          String
+  posts          Post[]
 }

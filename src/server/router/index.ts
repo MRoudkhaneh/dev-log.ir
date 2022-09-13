@@ -1,14 +1,25 @@
-import {NextApiRequest, NextApiResponse} from 'next';
 import nc from 'next-connect';
+import {TApiResult} from '@/types/TApiResult';
+import {NextApiRequest, NextApiResponse} from 'next';
 
 export const Router = nc<NextApiRequest, NextApiResponse>({
   attachParams: true,
-  onError: (err, req, res) => {
-    // res.status(500).end('خطاییدداخلی');
-    res.status(500).end(err);
-
+  onError: (
+    err: Error,
+    req: NextApiRequest,
+    res: NextApiResponse<TApiResult<null>>,
+  ) => {
+    res.status(500).json({
+      isSuccess: false,
+      message: err?.message,
+      data: null,
+    });
   },
-  onNoMatch: (req, res) => {
-    res.status(404).end('متاسفانه گشتیم نبود!');
+  onNoMatch: (req: NextApiRequest, res: NextApiResponse<TApiResult<null>>) => {
+    res.status(404).json({
+      isSuccess: false,
+      message: 'متاسفانه گشتیم نبود!',
+      data: null,
+    });
   },
 });
