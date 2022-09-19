@@ -1,6 +1,6 @@
-import * as z from 'zod';
+import * as yup from 'yup';
 
-export const AuthFormSchema = z.object({
-  username: z.string().min(1, {message: 'این فیلد اجباری است'}),
-  password: z.string().min(1, {message: 'این فیلد اجباری است'}),
+export const AuthFormSchema = yup.object({
+  username: yup.string().required({message: 'این فیلد اجباری است'}),
+  password: yup.string().required({message: 'این فیلد اجباری است'}),
 });

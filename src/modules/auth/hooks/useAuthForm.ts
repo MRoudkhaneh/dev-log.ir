@@ -1,5 +1,5 @@
 import {useForm} from 'react-hook-form';
-import {zodResolver} from '@hookform/resolvers/zod';
+import {yupResolver} from '@hookform/resolvers/yup';
 import {AuthFormSchema} from '../components/AuthForm/authForm.schema';
 
 export const useAuthForm = () => {
@@ -12,7 +12,7 @@ export const useAuthForm = () => {
       password: '',
       username: '',
     },
-    resolver: zodResolver(AuthFormSchema),
+    resolver: yupResolver(AuthFormSchema),
     mode: 'all',
   });
   return {handleSubmit, control, isValid, errors};
