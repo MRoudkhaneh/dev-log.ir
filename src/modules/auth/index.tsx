@@ -1,4 +1,4 @@
-import {Box, Center, Grid, Group, Paper, Stack} from '@mantine/core';
+import {Box, Grid, Paper, Stack} from '@mantine/core';
 import {AuthForm} from './components';
 import {useAuth} from './hooks/useAuth';
 

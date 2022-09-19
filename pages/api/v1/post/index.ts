@@ -4,7 +4,6 @@ import {asyncHandler} from '@/utils/asyncHandler';
 import {NextApiRequest, NextApiResponse} from 'next';
 import {NextHandler} from 'next-connect';
 import prismaClient from '@/server/prismaClient';
-import {Simulate} from 'react-dom/test-utils';
 
 export default Router.use(
   asyncHandler(
